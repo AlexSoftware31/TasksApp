@@ -1,0 +1,81 @@
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: 10px;
+  transition: box-shadow 0.2s, border-left-color 0.2s;
+  list-style: none;
+}
+
+.tarjeta:hover {
+  box-shadow: var(--shadow);
+}
+
+/* Color de la barra lateral por estado */
+.tarjeta--pendiente   { border-left-color: #f97316; }
+.tarjeta--en-progreso { border-left-color: #3b82f6; }
+.tarjeta--completada  { border-left-color: #10b981; opacity: 0.72; }
+
+/* Info de la tarjeta */
+.tarjeta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  text-align: left;
+  min-width: 0;
+}
+
+.tarjeta-titulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tarjeta--completada .tarjeta-titulo {
+  text-decoration: line-through;
+  color: var(--text);
+}
+
+/* Badge de estado */
+.tarjeta-estado {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.tarjeta-estado--pendiente {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+.tarjeta-estado--en-progreso {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+.tarjeta-estado--completada {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+/* Acciones */
+.tarjeta-acciones {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  align-items: center;
+}

@@ -1,0 +1,28 @@
+.buscador {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.buscador-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  height: 40px;
+}
+
+.buscador-input::placeholder {
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.buscador-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
