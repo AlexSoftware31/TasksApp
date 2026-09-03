@@ -1,0 +1,74 @@
+.pagina404 {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.pagina404-card {
+  text-align: center;
+  max-width: 440px;
+  width: 100%;
+}
+
+.pagina404-numero {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: -4px;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.pagina404-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0 0 12px;
+}
+
+.pagina404-descripcion {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0 0 36px;
+}
+
+.pagina404-acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pagina404-btn {
+  padding: 11px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+  min-width: 120px;
+}
+
+.pagina404-btn--primary {
+  background: var(--accent);
+  color: white;
+}
+
+.pagina404-btn--primary:hover {
+  opacity: 0.88;
+}
+
+.pagina404-btn--ghost {
+  background: var(--bg-subtle);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+}
+
+.pagina404-btn--ghost:hover {
+  background: var(--border);
+}

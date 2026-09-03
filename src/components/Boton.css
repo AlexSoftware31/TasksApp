@@ -59,3 +59,12 @@
 .boton--ghost:hover {
   background: var(--bg-subtle);
 }
+
+/* Info — ver detalle */
+.boton--info {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+}
+.boton--info:hover {
+  background: rgba(99, 102, 241, 0.2);
+}

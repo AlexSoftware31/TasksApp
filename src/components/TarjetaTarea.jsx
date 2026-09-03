@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Boton from "./Boton";
 import "./TarjetaTarea.css";
 
 function TarjetaTarea({ id, titulo, estado, onEliminar, onCompletar }) {
+  const navigate = useNavigate();
+
   const estadoClass =
     estado === "Completada"
       ? "completada"
@@ -25,6 +28,11 @@ function TarjetaTarea({ id, titulo, estado, onEliminar, onCompletar }) {
             onPress={() => onCompletar(id)}
           />
         )}
+        <Boton
+          variant="info"
+          text="Ver detalle"
+          onPress={() => navigate(`/tareas/${id}`)}
+        />
         <Boton
           variant="danger"
           text="Eliminar"
